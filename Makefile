@@ -1,6 +1,6 @@
-AVRMCU ?= atmega8
-F_CPU ?= 16000000
-ISPPORT ?= /dev/kaboard
+AVRMCU ?= atmega2560
+F_CPU ?= 1000000
+ISPPORT ?= usb
 
 VERSION = 0.2
 
