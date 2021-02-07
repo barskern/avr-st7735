@@ -15,19 +15,19 @@ uint8_t st7735_height = 0;
 enum ST7735_ORIENTATION st7735_orientation = ST7735_LANDSCAPE;
 
 static inline void st7735_set_rs(void) {
-	PORTD |= (1 << PD6);
+	PORTA |= (1 << PA1);
 }
 
 static inline void st7735_unset_rs(void) {
-	PORTD &= ~(1 << PD6);
+	PORTA &= ~(1 << PA1);
 }
 
 static inline void st7735_set_rst(void) {
-	PORTD |= (1 << PD7);
+	PORTA |= (1 << PA0);
 }
 
 static inline void st7735_unset_rst(void) {
-	PORTD &= ~(1 << PD7);
+	PORTA &= ~(1 << PA0);
 }
 
 static inline void st7735_write_cmd(enum ST7735_COMMANDS cmd) {
@@ -95,7 +95,7 @@ void st7735_run_command_list(const uint8_t *addr) {
 
 void st7735_init() {
 	// Set rs and rst output
-	DDRD |= (1 << PD6) | (1 << PD7);
+	DDRA |= (1 << PA1) | (1 << PA0);
 
 	st7735_reset();
 

@@ -12,11 +12,11 @@ static inline uint8_t spi_write(uint8_t byte) {
 }
 
 static inline void spi_set_cs(void) {
-	PORTB |= (1 << PB2);
+	PORTA |= (1 << PA2);
 }
 
 static inline void spi_unset_cs(void) {
-	PORTB &= ~(1 << PB2);
+	PORTA &= ~(1 << PA2);
 }
 
 
