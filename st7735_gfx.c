@@ -1,8 +1,8 @@
-#include "st7735_gfx.h"
+#include <st7735_gfx.h>
 
 #include<stdlib.h>
 
-#include "st7735.h"
+#include <st7735.h>
 
 #define _swap_uint8_t(a, b) { uint8_t t = a; a = b; b = t; }
 

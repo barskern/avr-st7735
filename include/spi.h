@@ -5,9 +5,10 @@
 
 void spi_init(void);
 
-static inline void spi_write(uint8_t byte) {
+static inline uint8_t spi_write(uint8_t byte) {
 	SPDR = byte;
 	while(!(SPSR & (1<<SPIF)));
+	return SPDR;
 }
 
 static inline void spi_set_cs(void) {

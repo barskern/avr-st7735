@@ -1,10 +1,10 @@
-#include "st7735.h"
+#include <st7735.h>
 
 #include <util/delay.h>
 #include <avr/pgmspace.h>
 
-#include "spi.h"
-#include "st7735initcmds.h"
+#include <spi.h>
+#include <st7735initcmds.h>
 
 uint8_t st7735_screen_row_start = 0;
 uint8_t st7735_screen_column_start = 0;

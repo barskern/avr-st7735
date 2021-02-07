@@ -1,4 +1,4 @@
-#include "spi.h"
+#include <spi.h>
 
 void spi_init(void) {
 	// Set MOSI and SCK, SS/CS output, all others input
