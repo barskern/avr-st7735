@@ -1,0 +1,27 @@
+[
+  {
+    "directory": ".",
+    "command": "avr-gcc -I include -I images -I fonts -Wall -Wstrict-prototypes --std=c99 -ffunction-sections -fdata-sections -fshort-enums -fpack-struct -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=1000000UL -DVERSION=0.2 -O0 -g -c main.c -o bin/atmega2560/main.o",
+    "file": "bin/atmega2560/main.o"
+  },
+  {
+    "directory": ".",
+    "command": "avr-gcc -I include -I images -I fonts -Wall -Wstrict-prototypes --std=c99 -ffunction-sections -fdata-sections -fshort-enums -fpack-struct -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=1000000UL -DVERSION=0.2 -O0 -g -c spi.c -o bin/atmega2560/spi.o",
+    "file": "bin/atmega2560/spi.o"
+  },
+  {
+    "directory": ".",
+    "command": "avr-gcc -I include -I images -I fonts -Wall -Wstrict-prototypes --std=c99 -ffunction-sections -fdata-sections -fshort-enums -fpack-struct -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=1000000UL -DVERSION=0.2 -O0 -g -c st7735.c -o bin/atmega2560/st7735.o",
+    "file": "bin/atmega2560/st7735.o"
+  },
+  {
+    "directory": ".",
+    "command": "avr-gcc -I include -I images -I fonts -Wall -Wstrict-prototypes --std=c99 -ffunction-sections -fdata-sections -fshort-enums -fpack-struct -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=1000000UL -DVERSION=0.2 -O0 -g -c st7735_gfx.c -o bin/atmega2560/st7735_gfx.o",
+    "file": "bin/atmega2560/st7735_gfx.o"
+  },
+  {
+    "directory": ".",
+    "command": "avr-gcc -I include -I images -I fonts -Wall -Wstrict-prototypes --std=c99 -ffunction-sections -fdata-sections -fshort-enums -fpack-struct -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=1000000UL -DVERSION=0.2 -O0 -g -c st7735_font.c -o bin/atmega2560/st7735_font.o",
+    "file": "bin/atmega2560/st7735_font.o"
+  }
+]
